@@ -15,3 +15,4 @@ CSS3 – For styling, layout, and custom animations.
 Bootstrap 5 – For responsive design, components, and grid system. 
 JavaScript (ES6) – For interactivity, DOM manipulation, scheduling logic, and dynamic rendering.
 Date Object – Used to manage timestamps and post timing logic.
+[🔗 Click here to view the live site](https://srilalithakarri.github.io/lalithaFacebookClone/index.html)
