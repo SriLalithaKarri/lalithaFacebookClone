@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css-file-link -->
+    <link rel="stylesheet" href="./index.css">
+    <!-- fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap icons cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="login-main-cont">
+        <div class="txt-cont">
+            <img src="./images/icons8-facebook-logo-240.png" class="sm-dvc-logo" />
+            <img src="./images/Facebook-Logo-sm-dvc.png" class="lg-dvc-logo" />
+            <h1 class="description">Facebook helps you connect and share with the people in your life.</h1>
+        </div>
+        <div class="login-form-cont">
+            <div class="input-cont">
+                <input type="text" placeholder="Enter Your Email Address" id="email"/>
+            </div>
+            <p id="emailErr" class="err-msg"></p>
+            <div class="input-cont pwd-cont">
+                <input type="password" placeholder="Enter Password" id="password" />
+                <i class="fa-solid fa-eye eye-icn"></i>
+            </div>
+            <p id="pswrdErr" class="err-msg"></p>
+            <button class="login-btn" id="loginBtn" disabled>Login</button>
+            <button class="create-acount-btn">Create new account</button>
+        </div>
+    </div>
+    <script>
+        let loginBtn = document.getElementById("loginBtn")
+        let emailErr = document.getElementById("emailErr")
+        let pswdErr = document.getElementById("pswrdErr")
+        let email = document.getElementById("email")
+        let password = document.getElementById("password")
+        let createAcountBtn = document.querySelector(".create-acount-btn")
+        let pswdIcn = document.querySelector(".eye-icn")
+        let credentials = { email: "", pswd: "" }
+        let showPassword = false
+
+        //getting userdet-data from local storage
+        function getUserdetListFrmLocalStrg() {
+            let res = localStorage.getItem("regUsersLst")
+            if (res == null) {
+                return []
+            } else {
+                return JSON.parse(res)
+            }
+        }
+
+        let usrdetLst = getUserdetListFrmLocalStrg()
+
+        //show or hide password 
+        pswdIcn.addEventListener('click', () => {
+            if (credentials.pswd !== "") {
+                showPassword = !showPassword
+                password.type = showPassword ? "text" : "password"
+                pswdIcn.classList.toggle('fa-eye')
+                pswdIcn.classList.toggle("fa-eye-slash")
+            }
+
+        })
+
+        //make login-button either active or disable
+        function updateLoginBtnStatus() {
+            let makeActive = true
+            for (let key in credentials) {
+                if (credentials[key] == "") {
+                    makeActive = false
+                    break
+                }
+            }
+            if (makeActive) {
+                loginBtn.disabled = false
+            } else {
+                loginBtn.disabled = true
+            }
+        }
+
+        //add blur event on email-field
+        email.addEventListener("input", (event) => {
+            if (event.target.value == "") {
+                emailErr.textContent = "Required"
+            } else {
+                emailErr.textContent = ""
+                credentials.email = event.target.value
+                updateLoginBtnStatus()
+            }
+
+        })
+
+        //add blur event on pswd
+        password.addEventListener("input", (event) => {
+            if (event.target.value == "") {
+                pswdErr.textContent = "Required"
+            } else {
+                pswdErr.textContent = ""
+                credentials.pswd = event.target.value
+                updateLoginBtnStatus()
+            }
+
+        })
+
+
+        //add click event on login button
+        loginBtn.addEventListener("click", () => {
+            let matchFound = usrdetLst.find((item) => item.email == credentials.email)
+            if (matchFound) {
+                if (matchFound.password == credentials.pswd) {
+                    localStorage.setItem("currentLoggedUser", JSON.stringify(matchFound))
+                    window.location.href = "../home/index.html"
+
+                } else {
+                    pswdErr.textContent = "Wrong Password"
+                }
+            } else {
+                emailErr.textContent = "This Email does not exist"
+            }
+        })
+
+        //navigate to signup-page
+        createAcountBtn.addEventListener('click', () => location.href = "./signuppage/signup.html")
+    </script>
+</body>
+
+</html>

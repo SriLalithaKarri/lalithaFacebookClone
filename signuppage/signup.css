@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #b6d9e7, #c2edfc, #70cdf5);
+    padding: 0px 20px 30px;
+    color: white;
+}
+
+.sign-up-main-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.lg-dvc-logo {
+    width: 180px;
+    height: 120px;
+    margin: -25px 0px -6px;
+}
+
+.sign-up-card {
+    width: 99%;
+    min-height: 250px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px lightgrey;
+    padding: 15px;
+    margin-top: -8px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUpCard 1.5s ease-out forwards;
+    animation-delay: 0.3s;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+@keyframes slideUpCard {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.text-cont {
+    border-bottom: 1px solid lightgray;
+    margin-left: -1%;
+    margin-right: -1%;
+    margin-bottom: 15px;
+}
+
+input {
+    width: 90%;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 6px;
+}
+
+input[type="file"]{
+    border: none;
+}
+
+.login-btn-cont{
+    border-top: 1px solid gray;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.login-btn {
+    width: 120px;
+    border-radius: 7px;
+    background-color: #1877F2;
+    border: none;
+    padding: 7px;
+    align-self: center;
+    margin-top: 12px;
+    
+}
+.login-btn a{
+    color: white;
+    text-decoration: none;
+}
+
+.sign-up-btn {
+    width: 70%;
+    border-radius: 5px;
+    background-color: #42B72A;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 12px;
+    align-self: center;
+}
+
+
+.err-msg {
+    color: red;
+    font-size: 14px;
+    margin: 0px 16px 15px;
+}
+
+input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+    transition: 0.3s;
+    outline: none;
+}
+
+.sign-up-btn:hover {
+    background-color: #36a420;
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+.selected-img{
+    display: none;
+}
+img{
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    margin: 0px;
+}
+.password-cont{
+    position: relative;
+}
+.eye-icn{
+    position: absolute;
+    right: 15%;
+    top: 25%;
+}
+@media(min-width:1024px) {
+    .sign-up-card {
+        width: 43%;
+    }
+
+    
+}
