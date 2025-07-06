@@ -130,11 +130,65 @@ let ads = [
     }
 ];
 
+const postData = [
+    {
+        "post_id": "1747731398959",
+        "user_id": "Dabboo_Ratnani",
+        "user_name": "Dabboo Ratnani",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-11-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-2-img.png",
+            "caption": "#Nofilter needed,"
+        },
+        "likes_count": 8,
+        "comments": [
+            {
+                "user_name": "Varun Aadithya",
+                "user_id": "Varun_Aadithya",
+                "comment": "Beauty is power; a smile is its sword."
+            },
+            {
+                "user_name": "Atul Kasbekar",
+                "user_id": "Atul_Kasbekar",
+                "comment": "Someone looked pretty today."
+            }
+        ],
+        "created_at": "2025-05-24T06:44:00.200Z",
+        "share_count": 3,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747731549000",
+        "user_id": "Rathika_Ramasamy",
+        "user_name": "Rathika Ramasamy",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-10-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-4-img.png",
+            "caption": "Friends Forever"
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Guru Charan",
+                "user_id": "Guru_Charan",
+                "comment": "Friendship is another word for love."
+            },
+            {
+                "user_name": "Atul Kasbekar",
+                "user_id": "Atul_Kasbekar",
+                "comment": "A friend is what the heart needs all the time."
+            }
+        ],
+        "created_at": "2025-05-22T08:00:00.000Z",
+        "share_count": 9,
+        "isLiked": false
+    }
+]
 
 function getPostDetailsFrmLocalStrg() {
     let res = localStorage.getItem("postDetails")
     if (res == null) {
-        return []
+        return postData
     } else {
         return JSON.parse(res)
     }
