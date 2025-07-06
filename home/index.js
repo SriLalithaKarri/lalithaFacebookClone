@@ -134,7 +134,7 @@ let ads = [
 function getPostDetailsFrmLocalStrg() {
     let res = localStorage.getItem("postDetails")
     if (res == null) {
-        return postData
+        return []
     } else {
         return JSON.parse(res)
     }
