@@ -17,7 +17,7 @@ if(!user){
         item.textContent = user.name
     })
 }
-
+ 
 
 //active tab styling
 if(tabOpened.includes("index.html")){

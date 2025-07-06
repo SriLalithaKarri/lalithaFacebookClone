@@ -618,7 +618,7 @@
 
 
 .header_option--active {
-  position: relative;
+  position: relative; 
 }
 .header_option--active i{
     color: #1877f2 !important; /* makes the icon blue */
