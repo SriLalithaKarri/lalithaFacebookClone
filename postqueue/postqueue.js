@@ -16,14 +16,26 @@ function renderScheduledPosts() {
   }
 
   scheduledPosts.forEach((post, index) => {
+    let element 
+    let caption
+    if(post.post_details.caption == "undefined"){
+      caption = "<p></p>"
+    }else{
+      caption = `<h6 class="ms-1">${post.post_details.caption}</h6>`
+    }
+    if(post.post_details.image_url == "undefined"){
+      element = "<p></p>"
+    }else{
+      element = `<img src="${post.post_details.image_url}"/>`
+    }
     const div = document.createElement("div");
     div.className = "scheduled-post";
     div.innerHTML = `
       <h5>${post.user_name}</h5>
-      <p>${post.post_details.caption}</p>
-      ${post.post_details.image_url ? `<img src="${post.post_details.image_url}" />` : ""}
-      <small class="mt-4">Scheduled for: ${new Date(post.scheduledTime).toLocaleString()}</small>
-      <button class="btn btn-sm btn-danger mt-4">Delete</button>
+      ${caption}
+      ${element}
+      <p class="mt-4">Scheduled for: ${new Date(post.scheduledTime).toLocaleString()}</p>
+      <button class="btn btn-sm btn-danger mt-4 align-self-end">Delete</button>
     `;
 
     // Delete button logic
@@ -56,4 +68,4 @@ setInterval(() => {
 
   localStorage.setItem("scheduledPosts", JSON.stringify(scheduledPosts));
   renderScheduledPosts();
-}, 15000);
+}, 1000);

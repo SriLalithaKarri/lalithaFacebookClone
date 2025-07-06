@@ -299,9 +299,15 @@ function getModalBody(item) {
     } else {
         imgUrl = item.post_details.image_url
     }
+    if(item.post_details.caption == "undefined"){
+        caption = `<p class="mt-0 mb-0"></p>`
+    }else{
+        caption = `<p class="post-caption p-3 pb-2" >${item.post_details.caption}</p>`
+
+    }
     let modal_body = `
         <div>
-          <p class="post-caption p-3 pb-2" >${item.post_details.caption}</p>
+          ${caption}
           ${getPostImage(imgUrl)}
       </div>
       <div class="post-bottom-top-cont ps-md-3 pe-md-4">
