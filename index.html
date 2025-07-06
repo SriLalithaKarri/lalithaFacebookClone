@@ -113,19 +113,23 @@
 
         //add click event on login button
         loginBtn.addEventListener("click", () => {
-            
-            let matchFound = usrdetLst.find((item) => item.email == credentials.email)
-            if (matchFound) {
-                if (matchFound.password == credentials.pswd) {
-                    localStorage.setItem("currentLoggedUser", JSON.stringify(matchFound))
-                    window.location.href = "../home/index.html"
+            if(email.value && password.value){
+                let matchFound = usrdetLst.find((item) => item.email == credentials.email)
+                if (matchFound) {
+                    if (matchFound.password == credentials.pswd) {
+                        localStorage.setItem("currentLoggedUser", JSON.stringify(matchFound))
+                        window.location.href = "../home/index.html"
 
+                    } else {
+                        pswdErr.textContent = "Wrong Password"
+                    }
                 } else {
-                    pswdErr.textContent = "Wrong Password"
+                    emailErr.textContent = "This Email does not exist"
                 }
-            } else {
-                emailErr.textContent = "This Email does not exist"
+            }else{
+                alert("please enter your credentials to Login")
             }
+            
         })
 
         //navigate to signup-page
