@@ -648,7 +648,7 @@ submitPost.addEventListener("click", (event) => {
         "isLiked": false
     }
     if (datetime) {
-        console.log(datetime)
+        // console.log(datetime)
         const selectedDate = new Date(datetime);
         const now = new Date();
 
@@ -657,9 +657,8 @@ submitPost.addEventListener("click", (event) => {
             return;
         }
         post_det.scheduledTime = datetime;
-        console.log(post_det,"schdpost")
+        // console.log(post_det,"schdpost")
         scheduledPosts.push(post_det);
-        console.log(scheduledPosts,'this is scheduled posts')
         localStorage.setItem("scheduledPosts", JSON.stringify(scheduledPosts))
         setTimeout(()=>{alert(`Your post is scheduled and will be shared at ${selectedDate.toLocaleString()}.`)},700)
 
@@ -692,9 +691,9 @@ setInterval(() => {
             posts.unshift(post);
             localStorage.setItem("postDetails", JSON.stringify(posts));
             renderPost(post);
-            return false; // remove from scheduled
+            return false; 
         }
-        return true; // keep it
+        return true; 
     });
 
     localStorage.setItem("scheduledPosts", JSON.stringify(scheduledPosts));

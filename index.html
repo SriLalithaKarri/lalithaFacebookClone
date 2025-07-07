@@ -28,7 +28,7 @@
             </div>
             <p id="emailErr" class="err-msg"></p>
             <div class="input-cont pwd-cont">
-                <input type="text" placeholder="Enter Password" id="password" />
+                <input type="password" placeholder="Enter Password" id="password" />
                 <i class="fa-solid fa-eye eye-icn"></i>
             </div>
             <p id="pswrdErr" class="err-msg"></p>
@@ -86,7 +86,7 @@
             }
         }
 
-        //add blur event on email-field
+        //add input event on email-field
         email.addEventListener("input", (event) => {
             if (event.target.value == "") {
                 emailErr.textContent = "Required"
@@ -98,7 +98,7 @@
 
         })
 
-        //add blur event on pswd
+        //add input event on pswd
         password.addEventListener("input", (event) => {
             if (event.target.value == "") {
                 pswdErr.textContent = "Required"

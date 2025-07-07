@@ -141,6 +141,12 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    height: 45px;
+    padding: 10px;
+}
+.logout-btn:hover{
+    background-color: lightgray;
+    width: 100%;
 }
 /* main-section */
 .main-section {

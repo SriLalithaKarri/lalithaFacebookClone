@@ -87,12 +87,12 @@
         }
 
         function validatePassword(pswd) {
-            let pswdRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z0-9\W_]{8,15}$/
+            let pswdRegex = /^(?=.*[A-Z])(?=.*\d).{8,15}$/
             //valid password must contain lower/upper case letters or numbers and length should between 8-15
             let result = pswdRegex.test(pswd)
             console.log(result,'pswd')
-            if (!result) {
-                pswdErr.textContent = "Must be at least 8 characters with letter and number"
+            if (!result){
+                pswdErr.textContent = "Must be at least 8 characters with atleast one Uppercase,number"
             } else {
                 user_det.password = pswd
                 pswdErr.textContent = ""
@@ -127,7 +127,6 @@
         //validateMobileNum
         function validateMobileNum(num) {
             let mobileRegEx = /^[6-9][0-9]{9}$/
-            // name can contain lower/upper case-letters or hypen symbol first-letter
             let result = mobileRegEx.test(num)
             if (!result) {
                 mobErr.textContent = "Please enter valid mobile number"
@@ -166,7 +165,7 @@
                     user_det.imgUrl = base64Image;
                     imgSelected.src = base64Image;
                     imgSelected.classList.remove("selected-img");
-                    imgSelected.classList.add(".image")
+                    imgSelected.classList.add("image")
                 };
                 reader.readAsDataURL(selectedFile);
             }
