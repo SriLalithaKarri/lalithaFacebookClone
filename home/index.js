@@ -182,8 +182,165 @@ const postData = [
         "created_at": "2025-05-22T08:00:00.000Z",
         "share_count": 9,
         "isLiked": false
+    },
+    {
+        "post_id": "1747732082639",
+        "user_id": "Guru_Charan",
+        "user_name": "Guru Charan",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-9-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-26-img.png",
+            "caption": "Beautiful things don't ask for attention."
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Rathika Ramasamy",
+                "user_id": "Rathika_Ramasamy",
+                "comment": "lovely"
+            },
+            {
+                "user_name": "Arjun Mark",
+                "user_id": "Arjun_Mark",
+                "comment": "awesome"
+            }
+        ],
+        "created_at": "2025-01-03T07:55:40.100Z",
+        "share_count": 7,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747732055029",
+        "user_id": "Varun_Aadithya",
+        "user_name": "Varun Aadithya",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-28-img.png",
+            "caption": "Keep calm and drive on."
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Varun Aadithya",
+                "user_id": "Varun_Aadithya",
+                "comment": "The cars we drive say a lot about us."
+            },
+            {
+                "user_name": "Guru Charan",
+                "user_id": "Guru_Charan",
+                "comment": "We aren't addicted to oil, but our cars are."
+            }
+        ],
+        "created_at": "2024-12-20T18:30:15.250Z",
+        "share_count": 3,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747732040087",
+        "user_id": "Rathika_Ramasamy",
+        "user_name": "Rathika Ramasamy",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-10-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-29-img.png",
+            "caption": "Love is the flower you've got to let grow."
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Prabuddha Dasgupta",
+                "user_id": "Prabuddha_Dasgupta",
+                "comment": "Beautiful flower"
+            },
+            {
+                "user_name": "Sooni Taraporevala",
+                "user_id": "Sooni_Taraporevala",
+                "comment": "Life is the flower for which love is the honey."
+            }
+        ],
+        "created_at": "2024-12-05T11:45:00.000Z",
+        "share_count": 6,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747731883762",
+        "user_id": "Varun_Aadithya",
+        "user_name": "Varun Aadithya",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-30-img.png",
+            "caption": "Random click"
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Atul Kasbekar",
+                "user_id": "Atul_Kasbekar",
+                "comment": "Cool."
+            },
+            {
+                "user_name": "Sooni Taraporevala",
+                "user_id": "Sooni_Taraporevala",
+                "comment": "Nice."
+            }
+        ],
+        "created_at": "2024-11-28T14:10:30.500Z",
+        "share_count": 9,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747731866117",
+        "user_id": "rahul",
+        "user_name": "Rahul",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-12-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-31-img.png",
+            "caption": "Take time to smell the roses."
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Varun Aadithya",
+                "user_id": "Varun_Aadithya",
+                "comment": "Love is the flower you've got to let grow."
+            },
+            {
+                "user_name": "Sooni Taraporevala",
+                "user_id": "Sooni_Taraporevala",
+                "comment": "This picture fascinates me. I just get lost into it."
+            }
+        ],
+        "created_at": "2024-11-15T08:23:45.000Z",
+        "share_count": 2,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747731840482",
+        "user_id": "rahul",
+        "user_name": "Rahul",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-12-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-32-img.png",
+            "caption": "Be water, my friend."
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Atul Kasbekar",
+                "user_id": "Atul_Kasbekar",
+                "comment": "Wonderful Place"
+            },
+            {
+                "user_name": "Dayanita Singh",
+                "user_id": "Dayanita_Singh",
+                "comment": "Beautiful"
+            }
+        ],
+        "created_at": "2024-11-20T18:30:15.250Z",
+        "share_count": 7,
+        "isLiked": false
     }
 ]
+
 
 function getPostDetailsFrmLocalStrg() {
     let res = localStorage.getItem("postDetails")
@@ -515,7 +672,6 @@ function renderAllPosts(postArray) {
 //searching for specific users post
 let searchSpecificUserPost = document.getElementById("searchSpecificUserPost")
 searchSpecificUserPost.addEventListener("input", () => {
-    console.log("event triggeed")
   const query = searchSpecificUserPost.value.trim().toLowerCase();
   if (query === "") {
     renderAllPosts(posts); // Reset view to all posts
