@@ -1,4 +1,4 @@
-A multi-page social media web application built using HTML, CSS, Bootstrap, and JavaScript. 
+A multi-page social media web application built using JavaScript,HTML, CSS, and Bootstrap. 
 It includes interactive user features, scheduling logic, and dynamic rendering to simulate real-world social platform behavior. 
 ✨ Features 
 🔐 Authentication Login and Signup pages with input validation using regular expressions. 
