@@ -145,12 +145,14 @@ const postData = [
             {
                 "user_name": "Varun Aadithya",
                 "user_id": "Varun_Aadithya",
-                "comment": "Beauty is power; a smile is its sword."
+                "comment": "Beauty is power; a smile is its sword.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png"
             },
             {
                 "user_name": "Atul Kasbekar",
                 "user_id": "Atul_Kasbekar",
-                "comment": "Someone looked pretty today."
+                "comment": "Someone looked pretty today.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-5-img.png"
             }
         ],
         "created_at": "2025-05-24T06:44:00.200Z",
@@ -171,12 +173,14 @@ const postData = [
             {
                 "user_name": "Guru Charan",
                 "user_id": "Guru_Charan",
-                "comment": "Friendship is another word for love."
+                "comment": "Friendship is another word for love.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-9-img.png"
             },
             {
                 "user_name": "Atul Kasbekar",
                 "user_id": "Atul_Kasbekar",
-                "comment": "A friend is what the heart needs all the time."
+                "comment": "A friend is what the heart needs all the time.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-5-img.png"
             }
         ],
         "created_at": "2025-05-22T08:00:00.000Z",
@@ -184,110 +188,145 @@ const postData = [
         "isLiked": false
     },
     {
-        "post_id": "1747732082639",
-        "user_id": "Guru_Charan",
-        "user_name": "Guru Charan",
-        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-9-img.png",
+        "post_id": "1747732483314",
+        "user_id": "Atul_Kasbekar",
+        "user_name": "Atul Kasbekar",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-5-img.png",
         "post_details": {
-            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-26-img.png",
-            "caption": "Beautiful things don't ask for attention."
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-5-img.png",
+            "caption": "The sky is the daily bread of the eyes."
         },
         "likes_count": 9,
         "comments": [
             {
-                "user_name": "Rathika Ramasamy",
-                "user_id": "Rathika_Ramasamy",
-                "comment": "lovely"
-            },
-            {
                 "user_name": "Arjun Mark",
                 "user_id": "Arjun_Mark",
-                "comment": "awesome"
-            }
+                "comment": "Aim for the sky, but move slowly, enjoying every step along the way.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-9-img.png"
+            },
+            {
+                "user_name": "Sooni Taraporevala",
+                "user_id": "Sooni_Taraporevala",
+                "comment": "The sky is an infinite movie to me.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-8-img.png"            }
         ],
-        "created_at": "2025-01-03T07:55:40.100Z",
-        "share_count": 7,
+        "created_at": "2025-05-17T04:30:55.300Z",
+        "share_count": 6,
         "isLiked": false
     },
     {
-        "post_id": "1747732055029",
-        "user_id": "Varun_Aadithya",
-        "user_name": "Varun Aadithya",
-        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png",
+        "post_id": "1747732464167",
+        "user_id": "Atul_Kasbekar",
+        "user_name": "Atul Kasbekar",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-5-img.png",
         "post_details": {
-            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-28-img.png",
-            "caption": "Keep calm and drive on."
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-7-img.png",
+            "caption": "You have to burn to be fragrant."
         },
         "likes_count": 9,
         "comments": [
             {
                 "user_name": "Varun Aadithya",
                 "user_id": "Varun_Aadithya",
-                "comment": "The cars we drive say a lot about us."
+                "comment": "The most powerful weapon on earth is the human soul on fire.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png"
             },
+            {
+                "user_name": "Gautam Rajadhyaksha",
+                "user_id": "Gautam_Rajadhyaksha",
+                "comment": "The mind is not a vessel to be filled but a fire to be kindled.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-9-img.png"
+            }
+        ],
+        "created_at": "2025-05-10T17:45:15.000Z",
+        "share_count": 4,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747732437737",
+        "user_id": "Prabuddha_Dasgupta",
+        "user_name": "Prabuddha Dasgupta",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-4-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-10-img.png",
+            "caption": "I like the night."
+        },
+        "likes_count": 9,
+        "comments": [
+            {
+                "user_name": "Sooni Taraporevala",
+                "user_id": "Sooni_Taraporevala",
+                "comment": "Each night, when I go to sleep, I die.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-8-img.png",
+            },
+            {
+                "user_name": "Varun Aadithya",
+                "user_id": "Varun_Aadithya",
+                "comment": "I have loved the stars too fondly to be fearful of the night.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png"
+            }
+        ],
+        "created_at": "2025-05-01T12:00:00.000Z",
+        "share_count": 2,
+        "isLiked": false
+    },
+    {
+        "post_id": "1747732425859",
+        "user_id": "Sooni_Taraporevala",
+        "user_name": "Sooni Taraporevala",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-8-img.png",
+        "post_details": {
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-12-img.png",
+            "caption": "Birds are indicators of the environment."
+        },
+        "likes_count": 9,
+        "comments": [
             {
                 "user_name": "Guru Charan",
                 "user_id": "Guru_Charan",
-                "comment": "We aren't addicted to oil, but our cars are."
+                "comment": "A heart without dreams is like a bird without feathers.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png"
+            },
+            {
+                "user_name": "Dabboo Ratnani",
+                "user_id": "Dabboo_Ratnani",
+                "comment": "I wish we had all been birds instead.",
+                "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-11-img.png"
             }
         ],
-        "created_at": "2024-12-20T18:30:15.250Z",
-        "share_count": 3,
+        "created_at": "2025-04-26T03:10:20.900Z",
+        "share_count": 5,
         "isLiked": false
     },
     {
-        "post_id": "1747732040087",
-        "user_id": "Rathika_Ramasamy",
-        "user_name": "Rathika Ramasamy",
-        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-10-img.png",
+        "post_id": "1747732407745",
+        "user_id": "Prabuddha_Dasgupta",
+        "user_name": "Prabuddha Dasgupta",
+        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-4-img.png",
         "post_details": {
-            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-29-img.png",
-            "caption": "Love is the flower you've got to let grow."
+            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-13-img.png",
+            "caption": "Attitude is like a wristwatch."
         },
         "likes_count": 9,
         "comments": [
             {
-                "user_name": "Prabuddha Dasgupta",
-                "user_id": "Prabuddha_Dasgupta",
-                "comment": "Beautiful flower"
+                "user_name": "Gautam Rajadhyaksha",
+                "user_id": "Gautam_Rajadhyaksha",
+                "comment": "A positive attitude can really make dreams come true",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-9-img.png"
             },
             {
                 "user_name": "Sooni Taraporevala",
                 "user_id": "Sooni_Taraporevala",
-                "comment": "Life is the flower for which love is the honey."
+                "comment": "Your attitude, not your aptitude, will determine your altitude.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-8-img.png",
             }
         ],
-        "created_at": "2024-12-05T11:45:00.000Z",
+        "created_at": "2025-04-14T21:15:30.000Z",
         "share_count": 6,
         "isLiked": false
     },
-    {
-        "post_id": "1747731883762",
-        "user_id": "Varun_Aadithya",
-        "user_name": "Varun Aadithya",
-        "profile_pic": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png",
-        "post_details": {
-            "image_url": "https://assets.ccbp.in/frontend/react-js/instagram-mini-project/posts/instagram-mini-project-post-30-img.png",
-            "caption": "Random click"
-        },
-        "likes_count": 9,
-        "comments": [
-            {
-                "user_name": "Atul Kasbekar",
-                "user_id": "Atul_Kasbekar",
-                "comment": "Cool."
-            },
-            {
-                "user_name": "Sooni Taraporevala",
-                "user_id": "Sooni_Taraporevala",
-                "comment": "Nice."
-            }
-        ],
-        "created_at": "2024-11-28T14:10:30.500Z",
-        "share_count": 9,
-        "isLiked": false
-    },
-    {
+     {
         "post_id": "1747731866117",
         "user_id": "rahul",
         "user_name": "Rahul",
@@ -301,12 +340,14 @@ const postData = [
             {
                 "user_name": "Varun Aadithya",
                 "user_id": "Varun_Aadithya",
-                "comment": "Love is the flower you've got to let grow."
+                "comment": "Love is the flower you've got to let grow.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-1-img.png"
             },
             {
                 "user_name": "Sooni Taraporevala",
                 "user_id": "Sooni_Taraporevala",
-                "comment": "This picture fascinates me. I just get lost into it."
+                "comment": "This picture fascinates me. I just get lost into it.",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-8-img.png",
             }
         ],
         "created_at": "2024-11-15T08:23:45.000Z",
@@ -327,12 +368,14 @@ const postData = [
             {
                 "user_name": "Atul Kasbekar",
                 "user_id": "Atul_Kasbekar",
-                "comment": "Wonderful Place"
+                "comment": "Wonderful Place",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-5-img.png"
             },
             {
                 "user_name": "Dayanita Singh",
                 "user_id": "Dayanita_Singh",
-                "comment": "Beautiful"
+                "comment": "Beautiful",
+                "image_url":"https://assets.ccbp.in/frontend/react-js/instagram-mini-project/users/instagram-mini-project-user-4-img.png"
             }
         ],
         "created_at": "2024-11-20T18:30:15.250Z",
@@ -340,6 +383,7 @@ const postData = [
         "isLiked": false
     }
 ]
+
 
 
 function getPostDetailsFrmLocalStrg() {
@@ -903,5 +947,10 @@ setTimeout(renderAds())
 
 // Update ads every 10 seconds (12000 milliseconds)
 setInterval(renderAds, 12000);
+
+
+
+
+
 
 
